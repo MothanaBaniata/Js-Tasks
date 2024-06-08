@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>output : <span id="Num"></span></h2>
+    <h2>output : <span id="Num1"></span></h2>
+    <h2>output : <span id="Num2"></span></h2>
+    <h2>output : <span id="Num3"></span></h2>
+    <h2>output : <span id="Num4"></span></h2>
+
+    <script>
+        var Num = '';
+        for (let i = 1; i < 11; i++) {
+            Num += ' ' + i;
+            document.getElementById('Num').innerHTML = Num;
+        }
+
+        var Num1 = '';
+        let a = 1;
+        while (a < 11) {
+            Num1 += ' ' + a;
+            document.getElementById('Num1').innerHTML = Num1;
+            a++;
+        }
+
+        var Num2 = '';
+        for (let b = 0; b < 11; b += 2) {
+            Num2 += ' ' + b;
+            document.getElementById('Num2').innerHTML = Num2;
+        }
+
+        var Num3 = 0;
+        for (let c = 1; c < 11; c++) {
+            Num3 += c;
+            document.getElementById('Num3').innerHTML = Num3;
+        }
+
+        var Num4 = '';
+        for (let d = 1; d < 11; d += 2) {
+            Num4 += ' ' + d;
+            document.getElementById('Num4').innerHTML = Num4;
+        }
+
+        let age = 27;
+        if (age > 16) {
+            greeting = '"you are an adult"';
+            console.log(greeting);
+
+        }
+
+        let score = 45;
+        if (score <= 50) {
+            greeting1 = '"you failed the test"';
+        } else {
+            greeting1 = '"you pass the test"';
+        }
+        console.log(greeting1);
+
+
+
+        let name = 'John';
+        if (name == 'John') {
+            console.log('"Hello, John"')
+        }
+
+        let day = 'saturday';
+        if (day == 'saturday' || day == 'sunday') {
+            greeting2 = '"It\'s a weekday"';
+        } else {
+            greeting2 = '"It\'s a work weekday"';
+        }
+        console.log(greeting2);
+
+
+        let number = 4;
+        if (number % 2 == 0) {
+            greeting3 = '"The number is even"';
+        } else {
+            greeting3 = '"The number is odd"';
+        }
+        console.log(greeting3);
+
+
+        let x = 5;
+        if (x * -1 < 0) {
+            greeting4 = '" x is psoitive number"';
+        }
+        console.log(greeting4);
+
+        let y = -5;
+        if (y * -1 > 0) {
+            greeting5 = '" y is negative number"';
+        }
+        console.log(greeting5);
+
+
+        let gpa = 3.5;
+        if (gpa >= 3.0) {
+            greeting6 = '"Congratulations, you have a good GPA!"';
+        }
+        console.log(greeting6);
+
+
+
+        let num = 10;
+        let greeting7 = true;
+        if (num <= 1) {
+            greeting7 = false;
+        } else {
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    greeting7 = false;
+                    break;
+                }
+            }
+        }
+        console.log(greeting7);
+
+    </script>
+
+</body>
+
+</html>

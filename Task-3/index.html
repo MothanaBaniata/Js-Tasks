@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <!-- Task 1 -->
+        <script>
+
+        function sayHello(name) {
+            console.log('Hello,' + name + '!')
+
+        }
+        sayHello('Alice')
+        sayHello('Bop')
+    </script>
+
+        <!-- Task 2 -->
+
+        <script>
+        let square = function (number) {
+            return number ** 2
+        }
+        console.log(square(2))
+        console.log(square(5))
+    </script>
+
+        <!-- Task 3 -->
+
+        <script>
+        multiply = (number1, number2) => number1 * number2;
+        console.log(multiply(2, 3))
+        console.log(multiply(5, 4))
+    </script>
+
+        <!-- Task 4 -->
+
+        <script>
+
+        let car = { make: "mercedes ", model: "gls600 ", year: "(2024)" }
+
+        function getCarInfo() {
+            return car.make + car.model + car.year;
+        }
+        console.log(car.make)
+        console.log(getCarInfo())
+    </script>
+
+        <!-- Task 5 -->
+
+        <script>
+
+        let colors = ['Red', 'Green', 'Blue'];
+
+        function printColors() {
+            return colors[0] + '\n' + colors[1] + '\n' + colors[2];
+        }
+        console.log(printColors());
+    </script>
+
+        <!-- Task 6 -->
+
+        <script>
+        function getStringLength(a) {
+            return a.length;
+        }
+        console.log(getStringLength('Hello'));
+        console.log(getStringLength('JavaScript'));
+    </script>
+
+        <!-- Task 7 -->
+
+        <script>
+        function toUpperCase(b) {
+            return b.toUpperCase();
+        }
+        console.log(toUpperCase('hello'));
+        console.log(toUpperCase('world'));
+    </script>
+
+        <!-- Task 8 -->
+
+        <script>
+        function splitString(c, d) {
+            return c.split(d);
+        }
+        console.log(splitString('hello', ' '));
+        console.log(splitString('JavaScript is fun', ' '));
+        console.log(splitString('JavaScript is fun', ''));
+        console.log(splitString('JavaScript is fun', '  '));
+    </script>
+    </body>
+
+</html>

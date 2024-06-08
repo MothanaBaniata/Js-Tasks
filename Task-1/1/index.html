@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arithmetic</title>
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <main>
+
+        <!-- Cash flow ratio -->
+        <div class="item">
+            <h2>Cash flow ratio</h2>
+            <div class="child">
+                <label for="cash">cash:</label>
+                <input type="number" id="cash" name="cash">
+            </div>
+            <div class="child">
+                <label for="currentLiabilities">current liabilities:</label>
+                <input type="number" id="currentLiabilities" name="currentLiabilities">
+            </div>
+            <button onclick="calculateRatio()">calculate ratio</button>
+            <p id="result"></p>
+        </div>
+
+        <!-- Net income -->
+        <div class="item">
+            <h2>Net income</h2>
+            <div class="child">
+                <label for="revenues">revenues:</label>
+                <input type="number" id="revenues" name="revenues">
+            </div>
+            <div class="child">
+                <label for="expenses">expenses:</label>
+                <input type="number" id="expenses" name="expenses">
+            </div>
+            <button onclick="Netincome()">Net income</button>
+            <p id="Netincome"></p>
+        </div>
+
+        <!-- Total assets -->
+        <div class="item">
+            <h2>Total assets</h2>
+            <div class="child">
+                <label for="liabilities">liabilities:</label>
+                <input type="number" id="liabilities" name="liabilities">
+            </div>
+            <div class="child">
+                <label for="equity">equity:</label>
+                <input type="number" id="equity" name="equity">
+            </div>
+            <button onclick="Totalassets()">Total assets</button>
+            <p id="Totalassets"></p>
+        </div>
+
+        <!-- Net income (using profit margin and sales)-->
+        <div class="item">
+            <h2>Net income</h2>
+            <div class="child">
+                <label for="profit">profit:</label>
+                <input type="number" id="profit" name="profit">
+            </div>
+            <div class="child">
+                <label for="sales">sales:</label>
+                <input type="number" id="sales" name="sales">
+            </div>
+            <button onclick="Netincome1()">Net income</button>
+            <p id="Netincome1"></p>
+        </div>
+
+        <!--Average -->
+        <div class="item">
+            <h2>Average</h2>
+            <span>input numbers:</span>
+            <div class="child">
+                <input type="number" id="firstnumber" name="firstnumber">
+                <input type="number" id="secondnumber" name="secondnumber">
+                <input type="number" id="thirdnumber" name="thirdnumber">
+            </div>
+            <button onclick="Average()">Average</button>
+            <p id="Average"></p>
+        </div>
+
+        <!-- Discount -->
+        <div class="item">
+            <h2>Discount</h2>
+            <div class="child">
+                <label for="price">price:</label>
+                <input type="number" id="price" name="price">
+            </div>
+            <div class="child">
+                <label for="discount">Discount:</label>
+                <input type="number" id="discount" name="discount">
+            </div>
+            <button onclick="Discount()">Discount</button>
+            <p id="Discount"></p>
+        </div>
+
+        <!-- Age limit -->
+        <div class="item">
+            <h2>Age limit</h2>
+            <br>
+            <div class="child">
+                <label for="Age">The age:</label>
+                <input type="number" min="0" max="120" step="1" id="Age" name="Age">
+            </div>
+            <button onclick="Age()">Check</button>
+            <p id="theresult"></p>
+        </div>
+
+        <!-- Exponential -->
+        <div class="item">
+            <h2>Exponential</h2>
+            <span>input numbers:</span>
+            <div class="child">
+                <input type="number" id="firstnum" name="firstnum">
+                <p>^</p>
+                <input type="number" id="secondnum" name="secondnum">
+                
+            </div>
+            <button onclick="Exponential()">The result</button>
+            <p id="Exponential"></p>
+        </div>
+
+        <!-- Remainder -->
+        <div class="item">
+            <h2>Remainder</h2>
+            <span>input numbers:</span>
+            <div class="child">
+                <input type="number" id="firstnumb" name="firstnumb">
+                <p>%</p>
+                <input type="number" id="secondnumb" name="secondnumb">
+                
+            </div>
+            <button onclick="Remainder()">The result</button>
+            <p id="Remainder"></p>
+        </div>
+    </main>
+</body>
+
+</html>

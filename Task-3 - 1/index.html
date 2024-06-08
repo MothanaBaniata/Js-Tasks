@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Task 1 -->
+    <script>
+
+        function calculateArea(radius) {
+            let area = Math.PI * radius ** 2
+            console.log(area)
+        }
+        calculateArea(5)
+        calculateArea(10)
+    </script>
+
+    <!-- Task 2 -->
+    <script>
+        function reverseString(str) {
+            return str.split('').reverse().join('')
+        }
+        console.log(reverseString('hello'))
+        console.log(reverseString('world'))
+    </script>
+
+
+    <!-- Task 3 -->
+    <script>
+
+        filterEvenNumbers = (numbers) => {
+            let new1 = []
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 == 0) {
+                    new1.push(numbers[i])
+                }
+            }
+            console.log(new1)
+            return new1
+        }
+        filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8])
+        filterEvenNumbers([11, 22, 33, 44, 55])
+    </script>
+
+    <!-- Task 4 -->
+    <script>
+        const library = {
+            books: [],
+
+            addBook: function (book) {
+                this.books.push(book);
+            }
+        }
+        library.addBook({ title: '1984', author: 'George Orwell' });
+        library.addBook({ title: 'To kill a Mockinegbird', author: 'Harper Lee ' });
+
+        console.log(library.books)
+
+    </script>
+
+
+    <!-- Task 5 -->
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        function sumArray(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i]
+            }
+            return sum;
+        }
+        console.log(sumArray(numbers))
+    </script>
+
+    <!-- Task 6 -->
+    <script>
+        function countVowels(str) {
+            let vowels = ['a', 'o', 'e', 'u', 'i',
+                'A', 'O', 'E', 'U', 'I'
+            ]
+
+            let counter = 0;
+
+            for (let i = 0; i < str.length; i++) {
+                if (vowels.includes(str[i])) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        console.log(countVowels('hello'))
+        console.log(countVowels('javascript'))
+        console.log(countVowels('Ahmad'))
+    </script>
+
+    <!-- Task 7 -->
+
+    <!-- <script>
+        function capitalizeWords(str) {
+            return str.toUpperCase()
+        }
+        console.log(capitalizeWords('hello world'))
+    </script> -->
+
+    <!-- Task 8 -->
+    <script>
+        function reverseWords(str) {
+            let words = str.split(' ')
+
+            let reverseWords = words.reverse()
+
+            return reverseWords
+        }
+        console.log(reverseWords('hello world'))
+        console.log(reverseWords('java script is fun'))
+    </script>
+
+
+</body>
+
+</html>
