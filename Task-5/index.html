@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x8 {
+            background-color: red;
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .x8.x-8 {
+            background-color: green;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        #color3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #tex {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .tooltip {
+        visibility: hidden;
+        width: 90px;
+        background-color: red;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+
+    <button id="btn">click me</button>
+
+    <p id="p1">The old text</p>
+    <button id="btn1">change the p text</button>
+
+    <div id="color"></div>
+
+    <div id="text">The old text</div>
+
+
+    <form id="form">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+
+    <input id="input" type="text"><br>
+
+    <input id="input1" type="text" placeholder="press keydown">
+
+    <div id="color1" class="x8"></div><br>
+
+    <form id="myForm">
+        <fieldset>
+            <input type="text" id="firstname" placeholder="First Name"><br>
+            <input type="text" id="lastname" placeholder="Last Name"><br>
+            <input type="number" id="phonenumber" placeholder="Phone Number"><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <img src="https://cdn7.dissolve.com/p/D1301_188_075/D1301_188_075_1200.jpg" id="image"><br>
+    <button id="changeimage">after</button><br><br>
+
+    <fieldset>
+        <input type="password" id="password" placeholder="password">
+        <input type="checkbox" id="checkbox">
+    </fieldset>
+
+    <div id="color3"></div>
+    <input type="color" id="color4">
+
+
+    <div>
+        <img id="img1" src="">
+        <button id="previous">previous</button>
+        <button id="next">next</button>
+    </div>
+    <br>
+    <button id="dynamic">click me</button>
+    <d id="tex"></d><br>
+
+
+    <div id="menu">
+        <p onclick="item('download')">download</p>
+        <p onclick="item('share')">share</p>
+    </div>
+    <div id="divMenu" style="width: 100px; height: 100px; background-color: forestgreen;"></div>
+
+    
+    <button id="btnUp">---UP---</button><br>
+
+    <a href="#" id="link">click me</a>
+
+    <div class="div5">
+        Hover tooltip
+        <span class="tooltip">Tooltip</span>
+    </div>
+    
+    <scRipt src="main.js"></scRipt>
+</body>
+
+</html>
